@@ -1,0 +1,251 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>OnTabFile-statictic</title>
+
+  	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href='css/ie.css'>
+	<link rel="stylesheet" href='css/font-awesome.css'>
+	<link rel="stylesheet" href='css/font-awesome.min.css'>
+	<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.9.2.custom.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href='css/media-queries.css'>
+
+	<!-- CSS to style the file input field as button and adjust the Bootstrap progress bars -->
+	<link rel="stylesheet" href="css/jquery.fileupload.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,700,600,800&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+	<!-- Timer -->
+	<link rel="stylesheet" href="css/style-timer.css">
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="js/mobilenav.js"></script>
+    <!-- The jQuery UI datapicked -->
+	<script src="js/jquery-ui-1.9.2.custom.js"></script>
+	<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->	
+	<script src="js/vendor/jquery.ui.widget.js"></script>
+	<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+	<script src="js/jquery.iframe-transport.js"></script>
+	<!-- The basic File Upload plugin -->
+	<script src="js/jquery.fileupload.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
+    <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+	<![endif]-->
+
+</head>
+<body>
+ <!-- =====================================================START HEADER=============================================== -->	
+<div class="page">
+	<div class="main-container">
+	
+		<header class="top-navigation non-mobile-menu">
+			<nav class="content">
+				<img src="img/logo.png" alt="logo" class="logo">
+				<ul class="menu inline-list">
+					<li><a href="#">право</a></li>
+					<li><a href="#">контакты</a></li>
+					<li><a href="#">рекламодатель</a></li>
+				</ul>
+				<p class="top-icon-menu fa fa-bars fa-3x"></p>
+				<div class="welcome-body dropdown">
+					<img src="img/icon-akk.png" class="akk-img" alt="icon-akk">
+					<p class="welcome">Приветствуем тебя,</p>
+					<p class="akk-name">Мешков Алексей</p>
+				</div>
+				<ul class="dropdown-menu dropdown-list"  role="menu">
+				    <li><a href="#"><i class="fa fa-folder"></i>Мои файлы</a></li>
+				    <li><a href="#"><i class="fa fa-search"></i>Поиск по файлу</a></li>
+				    <li><a href="#"><i class="fa fa-bar-chart-o"></i>Статистика</a></li>
+				    <li><a href="#"><i class="fa fa-code-fork"></i>Кнопки</a></li>
+				    <li><a href="#"><i class="fa fa-caret-square-o-down"></i>Потоки</a></li>
+				    <li><a href="#"><i class="fa fa-briefcase"></i>Выплаты</a></li>
+				    <li><a href="#"><i class="fa fa-user"></i>Профиль</a></li>
+				</ul>
+			</nav>
+		</header>	
+
+		<div class="content">
+			<div class="search">
+				<input type="text" placeholder="Поиск" class="search-input">
+				<a href="#" class="button-search">Поиск</a>
+			</div>
+
+			
+
+			<section class="block-content statictic">
+				<h5 class="title">Статистика:</h5>
+				
+				<div class="select">
+					<select type="text" class="stat-select" name="name" id="link-infofile" placeholder="">
+				    	<option selected value="stat1">По моим файлам</option>
+				    	<option value="stat2">По моим файлам2</option>
+				    	<option value="stat3">По моим файлам3</option>
+					</select>
+				</div>
+				<div class="select">
+					<select type="text" class="stat-select" name="name" id="link-infofile" placeholder="">
+				    	<option selected value="stat1">По потокам</option>
+				    	<option value="stat2">По потокам2</option>
+				    	<option value="stat3">По потокам3</option>
+					</select>
+				</div>
+
+				<div class="form-date">
+				    <label for="link-infofile" class="lbl-infofile">Начало периода: c</label>
+				     <input type="text" class="stat-input" name="name" id="datepicker" autocomplete="off" placeholder="">
+				    <label for="link-infofile" class="lbl-infofile">по</label>
+					<input type="text" class="stat-input" name="name" id="datepicker-po" placeholder="">
+					<input type="submit" class="btn-submit-infofile btn-table" name="name" id="link-infofile" value="Применить" placeholder="">
+
+			    </div>
+				<div class="table-responsive">
+	  				<table class="table table-statictic">
+						<thead>
+							<tr>
+								<td>Дата</td>
+								<td>Трафик</td>
+								<td><span>Скачки</span>Конверт скачек</td>
+								<td><span>Куплено</span>Подписок СМС ПрочееКонверт</td>
+								<td><span>Ребиллы</span>Количество Сумма (руб)</td>
+								<td><span>SMS</span>Количество Сумма (руб)</td>
+								<td><span>Прочее</span>Сумма (руб)</td>
+								<td><span>Итого</span>Сумма (руб)</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>01.02.14</td>
+								<td>1780</td>
+								<td>230<br>1/50</td>
+								<td>0<br>8960<br>9730<br>1/20</td>
+								<td>253<br>2984</td>
+								<td>94<br>3290</td>
+								<td>8650</td>
+								<td>12430</td>
+							</tr>
+							<tr>
+								<td>01.02.14</td>
+								<td>1780</td>
+								<td>230<br>1/50</td>
+								<td>0<br>8960<br>9730<br>1/20</td>
+								<td>253<br>2984</td>
+								<td>94<br>3290</td>
+								<td>8650</td>
+								<td>12430</td>
+							</tr>
+							<tr>
+								<td>01.02.14</td>
+								<td>1780</td>
+								<td>230<br>1/50</td>
+								<td>0<br>8960<br>9730<br>1/20</td>
+								<td>253<br>2984</td>
+								<td>94<br>3290</td>
+								<td>8650</td>
+								<td>12430</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>	
+
+			</section>
+		
+			
+		
+
+		
+			<div class="clear"></div>
+		</div>	
+
+
+	</div><!--container-->
+	
+	
+	
+<!-- =====================================================START FOOTER=============================================== -->	
+	<footer class="black-footer">
+		<div class="footer-wrap">
+			<div class="footer-logo">
+				<img src="img/logo.png" alt="logo">
+				<p class="allright">Все права защищены.<br>
+				Copyright &copy; 2014 Ontabfile.com</p>
+			</div>
+			
+			<ul class="nav-footer">
+				<li><a href="#">Правила</a></li>
+				<li><a href="#">Размещение рекламы</a></li>
+				<li><a href="#">Правообладателям</a></li>
+				<li><a href="#">Пожаловаться на файл</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Управление подпиской</a></li>
+				<li><a href="#">Партнерская программа</a></li>
+			</ul>
+			<div class="block-footer-icon">	
+				<img src="img/liveinternet.png" alt="jj">
+				<img src="img/webmoney.png" class="wm" alt="wm">
+				<img src="img/18.png" class="eighteen" alt="18">
+			</div>
+			
+		</div>	
+	</footer>	
+</div><!--page-->
+<script>
+/*jslint unparam: true */
+/*global window, $ */
+$(function () {
+    'use strict';
+    // Change this to the location of your server-side upload handler:
+    var url = window.location.hostname === 'blueimp.github.io' ?
+                '//jquery-file-upload.appspot.com/' : 'server/php/';
+    $('#fileupload').fileupload({
+    	dropZone: $('#dropzone'),
+    	autoUpload: true,
+        url: url,
+        dataType: 'json',
+
+        done: function (e, data) {
+            $.each(data.result.files, function (index, file) {
+              //  $('<p/>').text(file.name).appendTo('#files');
+               // $(".block-main-upload").css("display","none");
+            });
+        },
+        progressall: function (e, data) {
+            var progress = parseInt(data.loaded / data.total * 100, 10);
+            $('#progress .progress-bar').css(
+                'width',
+                progress + '%'
+            ).find('.progres-percent')
+             .text(progress + '%');
+        }
+    }).prop('disabled', !$.support.fileInput)
+        .parent().addClass($.support.fileInput ? undefined : 'disabled')
+    .bind('fileuploadsend',function(e, data){
+        $(".block-main-upload").css("display","none");
+        $(".block-infofile").css("display","block");
+     });
+
+    $('#fileupload_photo').fileupload({
+        url: url,
+        dataType: 'json',
+        autoUpload: true,
+        done: function (e, data) {
+        	 $.each(data.result.files, function (index, file) {
+               var _html_ = '<img src="'+file.thumbnailUrl+'"><input type="hidden" value="'+file.thumbnailUrl+'" name="photo">';
+              $('#fileupload_photo').next().html(_html_);
+            });	
+        }
+    });
+
+});
+</script>
+</body>
+</html>
+

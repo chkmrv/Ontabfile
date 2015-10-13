@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<title>OnTabFile</title>
+
+  	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href='css/ie.css'>
+	<link rel="stylesheet" href='css/font-awesome.css'>
+	<link rel="stylesheet" href='css/font-awesome.min.css'>
+	<link rel="stylesheet/less" href="styles.less">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href='css/media-queries.css'>
+
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,700,600,800&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+	<!-- Timer -->
+	<link rel="stylesheet" href="css/style-timer.css">
+
+	<script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/less.js"></script>
+    <script src="js/mobilenav.js"></script>
+    
+    <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+	<![endif]-->
+
+</head>
+<body>
+ <!-- =====================================================START HEADER=============================================== -->	
+<div class="page">
+	<div class="main-container">
+		<!--block mobile-->
+		<aside class="mobile-nav">
+				<ul class="list-mobile dropdown">
+					<li ><a href="#">право</a></li>
+					<li><a href="#">контакты</a></li>
+					<li><a href="#">рекламодатель</a></li>
+					<li ><a href="#" class="subcatalog" id="catalog-mobile">каталог</a>
+
+						<ul class="dropdown-catalog" id="dropdown-catalog">
+							<li><a href="#" class="audio subcatalog">Аудио</a>
+								<ul class="audio-list list"> 
+									<li><a href="#">Музыка</a></li>
+									<li><a href="#">Аудиокниги</a></li>
+									<li><a href="#">Аудиозаписи</a></li>
+									<li><a href="#">Другое</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="video subcatalog">Видео</a>
+								<ul class="video-list list"> 
+									<li><a href="#">Фильмы</a></li>
+									<li><a href="#">Фильмы DVDR</a></li>
+									<li><a href="#">Музыкальное видео</a></li>
+									<li><a href="#">Видеоролики</a></li>
+									<li><a href="#">В передачи</a></li>
+									<li><a href="#">КПК</a></li>
+									<li><a href="#">HD - Movies</a></li>
+									<li><a href="#">HD - TV shows</a></li>
+									<li><a href="#">3D</a></li>
+									<li><a href="#">Другое</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="program subcatalog">Программы</a>
+								<ul class="program-list list"> 
+									<li><a href="#">Windows</a></li>
+									<li><a href="#">Mac OS</a></li>
+									<li><a href="#">UNIX</a></li>
+									<li><a href="#">КПК</a></li>
+									<li><a href="#">iOS (iPad/iPhone)</a></li>
+									<li><a href="#">Android</a></li>
+									<li><a href="#">Други ОС</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="game subcatalog">Игры</a>
+								<ul class="game-list list"> 
+									<li><a href="#">PC</a></li>
+									<li><a href="#">Mac OS</a></li>
+									<li><a href="#">PSx</a></li>
+									<li><a href="#">XBOX360</a></li>
+									<li><a href="#">Wii</a></li>
+									<li><a href="#">КПК</a></li>
+									<li><a href="#">iOS (iPad/iPhone)</a></li>
+									<li><a href="#">Android</a></li>
+									<li><a href="#">Другое</a></li>
+								</ul>
+							</li>
+							<li><a href="#" class="other subcatalog">Другое</a>
+								<ul class="other-list list"> 
+									<li><a href="#">Электронные книги</a></li>
+									<li><a href="#">Комиксы</a></li>
+									<li><a href="#">Картинки</a></li>
+									<li><a href="#">Обложки</a></li>
+									<li><a href="#">Другое</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>		
+				</ul>	
+		</aside>
+		<header class="top-navigation">
+			<nav class="content">
+				<img src="img/logo.png" alt="logo" class="logo">
+				<ul class="menu inline-list">
+					<li><a href="#">право</a></li>
+					<li><a href="#">контакты</a></li>
+					<li><a href="#">рекламодатель</a></li>
+				</ul>
+				<p class="top-icon-menu fa fa-bars fa-3x"></p>
+				<div class="welcome-body">
+					<img src="img/icon-akk.png" class="akk-img" alt="icon-akk">
+					<p class="welcome">Приветствуем тебя,</p>
+					<p class="akk-name">Мешков Алексей</p>
+				</div>	
+			</nav>
+		</header>	
+
+		
+
+		<div class="content">
+			<div class="search">
+				<input type="text" placeholder="Поиск" class="search-input">
+				<a href="#" class="button-search">Поиск</a>
+			</div>
+			<aside class="catalog-block">
+				<ul>
+					<li><a href="#">Аудио</a>
+						<ul class="list-in-catalog"> 
+							<li><a href="#">Музыка</a></li>
+							<li><a href="#">Аудиокниги</a></li>
+							<li><a href="#">Аудиозаписи</a></li>
+							<li><a href="#">Другое</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Видео</a>
+						<ul class="list-in-catalog"> 
+							<li><a href="#">Фильмы</a></li>
+							<li><a href="#">Фильмы DVDR</a></li>
+							<li><a href="#">Музыкальное видео</a></li>
+							<li><a href="#">Видеоролики</a></li>
+							<li><a href="#">В передачи</a></li>
+							<li><a href="#">КПК</a></li>
+							<li><a href="#">HD - Movies</a></li>
+							<li><a href="#">HD - TV shows</a></li>
+							<li><a href="#">3D</a></li>
+							<li><a href="#">Другое</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Программы</a>
+						<ul class="list-in-catalog"> 
+							<li><a href="#">Windows</a></li>
+							<li><a href="#">Mac OS</a></li>
+							<li><a href="#">UNIX</a></li>
+							<li><a href="#">КПК</a></li>
+							<li><a href="#">iOS (iPad/iPhone)</a></li>
+							<li><a href="#">Android</a></li>
+							<li><a href="#">Други ОС</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Игры</a>
+						<ul class="list-in-catalog"> 
+							<li><a href="#">PC</a></li>
+							<li><a href="#">Mac OS</a></li>
+							<li><a href="#">PSx</a></li>
+							<li><a href="#">XBOX360</a></li>
+							<li><a href="#">Wii</a></li>
+							<li><a href="#">КПК</a></li>
+							<li><a href="#">iOS (iPad/iPhone)</a></li>
+							<li><a href="#">Android</a></li>
+							<li><a href="#">Другое</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Другое</a>
+						<ul class="list-in-catalog"> 
+							<li><a href="#">Электронные книги</a></li>
+							<li><a href="#">Комиксы</a></li>
+							<li><a href="#">Картинки</a></li>
+							<li><a href="#">Обложки</a></li>
+							<li><a href="#">Другое</a></li>
+						</ul>
+					</li>
+				</ul>	
+			</aside>
+		
+			<section class="block-main-upload">
+				<p><span class="extrabold">OnTabFile</span> - Быстрый файлообменник и бесплатный хостинг файлов. Место под хранение файлов не ограничено.</p>
+				<div class="block-place">
+					<div class="block-place-insert ">
+						
+						<p>Кликните, чтобы выбрать файлы для загрузки или перетащите их напрямую сюда</p>
+						<form id="upload" action="index.html" method="POST" enctype="multipart/form-data">
+							<fieldset>
+								<input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
+								<div>
+									<input type="file" id="fileselect" name="fileselect[]" multiple="multiple" />
+									<div id="filedrag">or drop files here</div>
+								</div>
+								<div id="submitbutton">
+									<button type="submit">Upload Files</button>
+								</div>
+							</fieldset>
+						</form>
+							<div id="messages">
+								<p>Status Messages</p>
+							</div>
+						<!-- <form enctype="multipart/form-data" method="post">
+						   	<div class="fileform">
+							<div class="selectbutton"></div>
+								<input type="file" id="upload" name="upload" class="button-upload" value="ds" multiple accept="image/*,image/jpeg">
+							</div>
+						    <input type="submit" value=" "></p>
+						</form> -->
+
+					</div>
+				</div>
+			</section>
+			<section class="block-file popfile inline-element">
+				<h2 class="block-file-title">ПОПУЛЯРНЫЕ ФАЙЛЫ</h2>
+				<div class="file">
+					<img src="img/icon-cc.png" class="main-icon" alt="icon"/>
+					<div class="file-disc">
+						<a href="#" class="file-link">CCleaner</a>
+						<p class="file-text gray mb">&emsp;(12mb)</p>
+						<p class="file-text-desc">Программа для очистки компьютера</p>
+						<div class="block-icon-file gray">
+							<img src="img/icon-eye.png" alt="icon"><p>2360</p>
+							<img src="img/upload-icon.png" alt="icon"><p>1720</p>
+							<img src="img/icon-stick.png" alt="icon"><p>Windows</p>
+						</div>
+					</div>
+				</div>	
+				<div class="file ">
+					<img src="img/icon-torent.png" class="main-icon" alt="icon"/>
+					<div class="file-disc">
+						<a href="#" class="file-link">uTorrent</a>
+						<p class="file-text gray">&emsp;(7mb)</p>
+						<p class="file-text-desc">Программа для скачивания торрент-файлов</p>
+						<div class="block-icon-file gray">
+							<img src="img/icon-eye.png" alt="icon"><p>103456</p>
+							<img src="img/upload-icon.png" alt="icon"><p>17240</p>
+							<img src="img/icon-stick.png" alt="icon"><p>MacOS</p>
+						</div>
+					</div>
+				</div>	
+				<div class="file">
+					<img src="img/icon-mic.png" class="main-icon" alt="icon">
+					<div class="file-disc">
+						<a href="#" class="file-link">Microsoft Office 2010</a>
+						<p class="file-text gray mb">&emsp;(542mb)</p>
+						<p class="file-text-desc">Офисный пакет приложений: Word, Exel...и др.</p>
+						<div class="block-icon-file gray">
+							<img src="img/icon-eye.png" alt="icon"><p>2360</p>
+							<img src="img/upload-icon.png" alt="icon"><p>1720</p>
+							<img src="img/icon-stick.png" alt="icon"><p>Windows</p>
+						</div>
+					</div>
+				</div>	
+				<div class="file">
+					<img src="img/icon-cc.png" class="main-icon" alt="icon">
+					<div class="file-disc">
+						<a href="#" class="file-link">CCleaner</a>
+						<p class="file-text gray mb">&emsp;(12mb)</p>
+						<p class="file-text-desc">Программа для очистки компьютера</p>
+						<div class="block-icon-file gray">
+							<img src="img/icon-eye.png" alt="icon"><p>2360</p>
+							<img src="img/upload-icon.png" alt="icon"><p>1720</p>
+							<img src="img/icon-stick.png" alt="icon"><p>Windows</p>
+						</div>
+					</div>
+				</div>	
+				<div class="file ">
+					<img src="img/icon-torent.png" class="main-icon" alt="icon">
+					<div class="file-disc">
+						<a href="#" class="file-link">uTorrent</a>
+						<p class="file-text gray">&emsp;(7mb)</p>
+						<p class="file-text-desc">Программа для скачивания торрент-файлов</p>
+						<div class="block-icon-file gray">
+							<img src="img/icon-eye.png" alt="icon"><p>103456</p>
+							<img src="img/upload-icon.png" alt="icon"><p>17240</p>
+							<img src="img/icon-stick.png" alt="icon"><p>MacOS</p>
+						</div>
+					</div>
+				</div>	
+			</section>
+
+
+			<section class="block-file inline-element">
+				<h2 class="block-file-title">СЕЙЧАС ЗАГРУЖАЮТ</h2>
+				<div class="file">
+					<img src="img/icon-watsapp.png" class="main-icon" alt="icon">
+					<div class="file-disc">
+						<a href="#" class="file-link">WhatsApp</a>
+						<p class="file-text gray mb">&emsp;(12mb)</p>
+						<p class="file-text-desc">Программа для очистки компьютера</p>
+						<div class="block-icon-file gray">
+							<img src="img/icon-eye.png" alt="icon"><p>2360</p>
+							<img src="img/upload-icon.png" alt="icon"><p>1720</p>
+							<img src="img/icon-stick.png" alt="icon"><p>Windows</p>
+						</div>
+					</div>
+				</div>	
+				<div class="file ">
+					<img src="img/icon-torent.png" class="main-icon" alt="icon">
+					<div class="file-disc">
+						<a href="#" class="file-link">Антивирус Касперского</a>
+						<p class="file-text gray">&emsp;(7mb)</p>
+						<p class="file-text-desc">Программа для скачивания торрент-файлов</p>
+						<div class="block-icon-file gray">
+							<img src="img/icon-eye.png" alt="icon"><p>103456</p>
+							<img src="img/upload-icon.png" alt="icon"><p>17240</p>
+							<img src="img/icon-stick.png" alt="icon"><p>MacOS</p>
+						</div>
+					</div>
+				</div>	
+				<div class="file">
+					<img src="img/icon-mic.png" class="main-icon" alt="icon">
+					<div class="file-disc">
+						<a href="#" class="file-link">Microsoft Office 2010</a>
+						<p class="file-text gray mb">&emsp;(542mb)</p>
+						<p class="file-text-desc">Офисный пакет приложений: Word, Exel...и др.</p>
+						<div class="block-icon-file gray">
+							<img src="img/icon-eye.png" alt="icon"><p>2360</p>
+							<img src="img/upload-icon.png" alt="icon"><p>1720</p>
+							<img src="img/icon-stick.png" alt="icon"><p>Windows</p>
+						</div>
+					</div>
+				</div>	
+				<div class="file">
+					<img src="img/icon-cc.png" class="main-icon" alt="icon">
+					<div class="file-disc">
+						<a href="#" class="file-link">CCleaner</a>
+						<p class="file-text gray mb">&emsp;(12mb)</p>
+						<p class="file-text-desc">Программа для очистки компьютера</p>
+						<div class="block-icon-file gray">
+							<img src="img/icon-eye.png" alt="icon"><p>2360</p>
+							<img src="img/upload-icon.png" alt="icon"><p>1720</p>
+							<img src="img/icon-stick.png" alt="icon"><p>Windows</p>
+						</div>
+					</div>
+				</div>	
+				<div class="file ">
+					<img src="img/icon-torent.png" class="main-icon" alt="icon">
+					<div class="file-disc">
+						<a href="#" class="file-link">uTorrent</a>
+						<p class="file-text gray">&emsp;(7mb)</p>
+						<p class="file-text-desc">Программа для скачивания торрент-файлов</p>
+						<div class="block-icon-file gray">
+							<img src="img/icon-eye.png" alt="icon"><p>103456</p>
+							<img src="img/upload-icon.png" alt="icon"><p>17240</p>
+							<img src="img/icon-stick.png" alt="icon"><p>MacOS</p>
+						</div>
+					</div>
+				</div>	
+			</section>
+			<section class="block-ad">
+				<img src="img/ad-bottom-first.png" alt="ad">
+				<div class="block-ad-text">
+					<p>Позиция Израиля относительно Евромайдана довольно</p>
+					<a href="#" class="link-ad">mnenia.zahav.ru</a>
+				</div>
+				<img src="img/ad-bottom-second.png" alt="ad">
+				<div class="block-ad-text">
+					<p>Названа сумма компенсации Ходорковскому за отсиженные годы</p>
+					<a href="#" class="link-ad">utro.ru</a>
+				</div>
+				<img src="img/ad-bottom-third.png" alt="ad">
+				<div class="block-ad-text">
+					<p>На забытом острове России нашли 8 тысяч тонн "ценного груза" ...</p>
+					<a href="#" class="link-ad">justmedia.ru</a>
+				</div>
+			</section>
+			<div class="clear"></div>
+		</div>	
+
+
+	</div><!--container-->
+	
+	
+	
+<!-- =====================================================START FOOTER=============================================== -->	
+	<footer class="black-footer">
+		<div class="footer-wrap">
+			<div class="footer-logo">
+				<img src="img/logo.png" alt="logo">
+				<p class="allright">Все права защищены.<br>
+				Copyright &copy; 2014 Ontabfile.com</p>
+			</div>
+			
+			<ul class="nav-footer">
+				<li><a href="#">Правила</a></li>
+				<li><a href="#">Размещение рекламы</a></li>
+				<li><a href="#">Правообладателям</a></li>
+				<li><a href="#">Пожаловаться на файл</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">Управление подпиской</a></li>
+				<li><a href="#">Партнерская программа</a></li>
+			</ul>
+			<div class="block-footer-icon">	
+				<img src="img/liveinternet.png" alt="jj">
+				<img src="img/webmoney.png" class="wm" alt="wm">
+				<img src="img/18.png" class="eighteen" alt="18">
+			</div>
+			
+		</div>	
+	</footer>	
+</div><!--page-->
+<script src="js/filedrag.js"></script>
+</body>
+</html>
+
